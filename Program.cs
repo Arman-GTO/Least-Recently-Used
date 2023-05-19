@@ -33,8 +33,8 @@ while (true)
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write("  OK\n");
                     Console.Write("  {");
-                    foreach (var item in LRU.WriteAll()) Console.Write($"({item.Key},{item.Value.value}),");
-                    if (LRU.WriteAll().Count != 0)
+                    foreach (var item in LRU.GetCache()) Console.Write($"({item.Key},{item.Value.value}),");
+                    if (LRU.GetCache().Count != 0)
                         Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
                     Console.Write("}\n");
                     break;
@@ -49,8 +49,8 @@ while (true)
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write("  null\n");
                     Console.Write("  {");
-                    foreach (var item in LRU.WriteAll()) Console.Write($"({item.Key},{item.Value.value}),");
-                    if (LRU.WriteAll().Count != 0)
+                    foreach (var item in LRU.GetCache()) Console.Write($"({item.Key},{item.Value.value}),");
+                    if (LRU.GetCache().Count != 0)
                         Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
                     Console.Write("}\n");
                     break;
@@ -64,8 +64,8 @@ while (true)
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write("  " + LRU.Get(Convert.ToInt32(arr[1])) + "\n");
                     Console.Write("  {");
-                    foreach (var item in LRU.WriteAll()) Console.Write($"({item.Key},{item.Value.value}),");
-                    if (LRU.WriteAll().Count != 0)
+                    foreach (var item in LRU.GetCache()) Console.Write($"({item.Key},{item.Value.value}),");
+                    if (LRU.GetCache().Count != 0)
                         Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
                     Console.Write("}\n");
                     break;

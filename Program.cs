@@ -10,7 +10,7 @@ while (true)
     LRU = null;
     Console.Clear();
     Console.ForegroundColor = ConsoleColor.Cyan;
-    Console.Write("  P{lease enter instructions: (init, get, put)\n       (enter nothing to exit)\n\n");
+    Console.Write("  Please enter instructions: (init, get, put)\n       (enter nothing to exit)\n\n");
     while (true)
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
